@@ -1,0 +1,28 @@
+lambda zip
+[ec2-user@ip-172-31-10-221 lsc-lab4-aws-cloud-r2-szaross]$ aws ecr describe-images --repository-name lsc-knn-app \
+    --image-ids imageTag=latest --query 'imageDetails[0].imageTags'
+# Expected: ["latest"]
+[
+    "latest"
+]
+
+
+lambda container
+[ec2-user@ip-172-31-10-221 lsc-lab4-aws-cloud-r2-szaross]$ aws lambda invoke --function-name lsc-knn-container \
+    --cli-binary-format raw-in-base64-out \
+    --payload "$(python3 -c 'import json; q=json.load(open("loadtest/query.json")); print(json.dumps({"body": json.dumps(q)}))')" \
+    /tmp/out.json
+cat /tmp/out.json
+{
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+}
+
+fargate
+[ec2-user@ip-172-31-10-221 lsc-lab4-aws-cloud-r2-szaross]$ curl -X POST -H "Content-Type: application/json" -d @loadtest/query.json \
+    http://lsc-knn-alb-1742105879.us-east-1.elb.amazonaws.com/search
+{"instance_id":"ip-172-31-17-38.ec2.internal","query_time_ms":24.166,"results":[{"distance":12.001459121704102,"index":35859},{"distance":12.059946060180664,"index":24682},{"distance":12.487079620361328,"index":35397},{"distance":12.489519119262695,"index":20160},{"distance":12.499402046203613,"index":30454}]}
+
+ec2
+[ec2-user@ip-172-31-10-221 lsc-lab4-aws-cloud-r2-szaross]$ curl -X POST -H 'Content-Type: application/json' -d @loadtest/query.json http://44.221.79.18:8080/search
+{"instance_id":"51cd808ae1d2","query_time_ms":23.531,"results":[{"distance":12.001459121704102,"index":35859},{"distance":12.059946060180664,"index":24682},{"distance":12.487079620361328,"index":35397},{"distance":12.489519119262695,"index":20160},{"distance":12.499402046203613,"index":30454}]}

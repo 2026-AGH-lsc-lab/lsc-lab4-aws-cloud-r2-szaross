@@ -1,43 +1,43 @@
 === fargate | concurrency=50 | 500 requests ===
 Summary:
   Success rate:	100.00%
-  Total:	39.0678 sec
-  Slowest:	4.3833 sec
-  Fastest:	0.1820 sec
-  Average:	3.7318 sec
-  Requests/sec:	12.7983
+  Total:	39.5585 sec
+  Slowest:	4.3993 sec
+  Fastest:	0.1602 sec
+  Average:	3.7824 sec
+  Requests/sec:	12.6395
 
-  Total data:	152.76 KiB
-  Size/request:	312 B
-  Size/sec:	3.91 KiB
+  Total data:	153.28 KiB
+  Size/request:	313 B
+  Size/sec:	3.87 KiB
 
 Response time histogram:
-  0.182 sec [1]   |
-  0.602 sec [5]   |
-  1.022 sec [4]   |
-  1.442 sec [7]   |
-  1.863 sec [6]   |
-  2.283 sec [5]   |
-  2.703 sec [5]   |
-  3.123 sec [7]   |
-  3.543 sec [6]   |
-  3.963 sec [276] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-  4.383 sec [178] |■■■■■■■■■■■■■■■■■■■■
+  0.160 sec [1]   |
+  0.584 sec [3]   |
+  1.008 sec [8]   |■
+  1.432 sec [4]   |
+  1.856 sec [4]   |
+  2.280 sec [5]   |
+  2.704 sec [8]   |■
+  3.128 sec [2]   |
+  3.551 sec [10]  |■
+  3.975 sec [219] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.399 sec [236] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 Response time distribution:
-  10.00% in 3.6253 sec
-  25.00% in 3.7959 sec
-  50.00% in 3.8983 sec
-  75.00% in 3.9990 sec
-  90.00% in 4.0955 sec
-  95.00% in 4.1111 sec
-  99.00% in 4.2125 sec
-  99.90% in 4.3833 sec
-  99.99% in 4.3833 sec
+  10.00% in 3.6121 sec
+  25.00% in 3.8079 sec
+  50.00% in 3.9137 sec
+  75.00% in 4.0172 sec
+  90.00% in 4.1820 sec
+  95.00% in 4.2015 sec
+  99.00% in 4.3045 sec
+  99.90% in 4.3993 sec
+  99.99% in 4.3993 sec
 
 
 Details (average, fastest, slowest):
-  DNS+dialup:	0.0013 sec, 0.0008 sec, 0.0018 sec
+  DNS+dialup:	0.0012 sec, 0.0007 sec, 0.0019 sec
   DNS-lookup:	0.0000 sec, 0.0000 sec, 0.0001 sec
 
 Status code distribution:

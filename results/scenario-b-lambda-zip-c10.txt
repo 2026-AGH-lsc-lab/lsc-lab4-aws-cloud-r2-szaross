@@ -1,45 +1,45 @@
 === lambda-zip | concurrency=10 | 500 requests ===
 Summary:
   Success rate:	100.00%
-  Total:	752.6322 ms
-  Slowest:	77.9040 ms
-  Fastest:	8.5375 ms
-  Average:	14.8423 ms
-  Requests/sec:	664.3352
+  Total:	4924.0627 ms
+  Slowest:	700.2751 ms
+  Fastest:	67.6308 ms
+  Average:	97.3370 ms
+  Requests/sec:	101.5422
 
-  Total data:	33.20 KiB
-  Size/request:	68 B
-  Size/sec:	44.12 KiB
+  Total data:	185.48 KiB
+  Size/request:	379 B
+  Size/sec:	37.67 KiB
 
 Response time histogram:
-   8.538 ms [1]   |
-  15.474 ms [377] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-  22.411 ms [94]  |■■■■■■■
-  29.347 ms [13]  |■
-  36.284 ms [3]   |
-  43.221 ms [1]   |
-  50.157 ms [1]   |
-  57.094 ms [0]   |
-  64.031 ms [0]   |
-  70.967 ms [9]   |
-  77.904 ms [1]   |
+   67.631 ms [1]   |
+  130.895 ms [486] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  194.160 ms [12]  |
+  257.424 ms [0]   |
+  320.689 ms [0]   |
+  383.953 ms [0]   |
+  447.217 ms [0]   |
+  510.482 ms [0]   |
+  573.746 ms [0]   |
+  637.011 ms [0]   |
+  700.275 ms [1]   |
 
 Response time distribution:
-  10.00% in 10.4528 ms
-  25.00% in 11.3763 ms
-  50.00% in 12.5558 ms
-  75.00% in 15.2610 ms
-  90.00% in 19.0472 ms
-  95.00% in 23.0962 ms
-  99.00% in 68.7912 ms
-  99.90% in 77.9040 ms
-  99.99% in 77.9040 ms
+  10.00% in 81.6147 ms
+  25.00% in 87.5004 ms
+  50.00% in 96.3491 ms
+  75.00% in 100.3644 ms
+  90.00% in 110.5397 ms
+  95.00% in 119.1397 ms
+  99.00% in 147.1827 ms
+  99.90% in 700.2751 ms
+  99.99% in 700.2751 ms
 
 
 Details (average, fastest, slowest):
-  DNS+dialup:	54.1304 ms, 52.9466 ms, 55.3367 ms
-  DNS-lookup:	0.0148 ms, 0.0086 ms, 0.0567 ms
+  DNS+dialup:	52.6421 ms, 51.5818 ms, 53.4347 ms
+  DNS-lookup:	0.0141 ms, 0.0082 ms, 0.0465 ms
 
 Status code distribution:
-  [403] 500 responses
+  [200] 500 responses
 

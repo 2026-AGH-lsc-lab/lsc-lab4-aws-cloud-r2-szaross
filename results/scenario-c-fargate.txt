@@ -1,38 +1,38 @@
 Summary:
   Success rate:	100.00%
-  Total:	15.4918 sec
-  Slowest:	4.2050 sec
-  Fastest:	0.3047 sec
-  Average:	3.4415 sec
-  Requests/sec:	12.9101
+  Total:	15.7299 sec
+  Slowest:	4.3093 sec
+  Fastest:	0.3345 sec
+  Average:	3.5037 sec
+  Requests/sec:	12.7146
 
-  Total data:	61.11 KiB
-  Size/request:	312 B
-  Size/sec:	3.94 KiB
+  Total data:	61.31 KiB
+  Size/request:	313 B
+  Size/sec:	3.90 KiB
 
 Response time histogram:
-  0.305 sec [1]  |
-  0.695 sec [6]  |■■
-  1.085 sec [1]  |
-  1.475 sec [7]  |■■
-  1.865 sec [7]  |■■
-  2.255 sec [5]  |■
-  2.645 sec [5]  |■
-  3.035 sec [5]  |■
-  3.425 sec [4]  |■
-  3.815 sec [69] |■■■■■■■■■■■■■■■■■■■■■■■■
-  4.205 sec [90] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.335 sec [1]  |
+  0.732 sec [6]  |■■
+  1.129 sec [7]  |■■
+  1.527 sec [2]  |
+  1.924 sec [5]  |■
+  2.322 sec [6]  |■■
+  2.719 sec [4]  |■
+  3.117 sec [5]  |■
+  3.514 sec [7]  |■■
+  3.912 sec [76] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.309 sec [81] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 Response time distribution:
-  10.00% in 1.7865 sec
-  25.00% in 3.6079 sec
-  50.00% in 3.8081 sec
-  75.00% in 3.9183 sec
-  90.00% in 4.0122 sec
-  95.00% in 4.0968 sec
-  99.00% in 4.2050 sec
-  99.90% in 4.2050 sec
-  99.99% in 4.2050 sec
+  10.00% in 1.8344 sec
+  25.00% in 3.6982 sec
+  50.00% in 3.8983 sec
+  75.00% in 4.0023 sec
+  90.00% in 4.1175 sec
+  95.00% in 4.2002 sec
+  99.00% in 4.3042 sec
+  99.90% in 4.3093 sec
+  99.99% in 4.3093 sec
 
 
 Details (average, fastest, slowest):

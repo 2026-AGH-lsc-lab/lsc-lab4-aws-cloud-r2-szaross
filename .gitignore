@@ -19,6 +19,8 @@ deploy/lambda-layer/*.zip
 .aws/
 *.pem
 
+# Endpoint URLs (contain session-specific AWS URLs)
+loadtest/endpoints.sh
+
 # Not part of the student template
 CLAUDE.md
-generate_figures.py
